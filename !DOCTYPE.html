@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .product-card { display: inline-block; margin: 20px; padding: 10px; border: 1px solid #ddd; width: 300px; }
+        .product-card img { width: 100%; height: auto; }
+        .cart { position: fixed; top: 10px; right: 10px; }
+        .price { font-weight: bold; color: green; }
+    </style>
+</head>
+<body>
+    <div class="cart">
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </div>
+
+    <!-- coke -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\coke_pooch.png" alt="coke">
+        <h3>coke</h3>
+        <p>Description of coke</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $25.00/month</p>
+        <button onclick="addToCart('coke - Monthly', 25)">Add Monthly to Cart</button>
+        
+        <p class="price">Lifetime: $250.00</p>
+        <button onclick="addToCart('coke - Lifetime', 250)">Add Lifetime to Cart</button>
+    </div>
+
+    <!-- blacklightning -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\blacklightning - Copy.png" alt="blacklightning">
+        <h3>blacklightning 2</h3>
+        <p>Description of blacklightning</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $35.00/month</p>
+        <button onclick="addToCart('blacklightning - Monthly', 35)">Add Monthly to Cart</button>
+
+<!-- blacktar -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\blacktar - Copy.png" alt="blacktar">
+        <h3>blacktar 2</h3>
+        <p>Description of blacktar</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $38.00/month</p>
+        <button onclick="addToCart('blacktar - Monthly', 38)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $300.00</p>
+        <button onclick="addToCart('blacktar - Lifetime', 300)">Add Lifetime to Cart</button>
+    </div>
+
+<!-- acid -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\acid.png" alt="acid">
+        <h3>acid 2</h3>
+        <p>Description of acid</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $22.00/month</p>
+        <button onclick="addToCart('acid - Monthly', 22)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $160.00</p>
+        <button onclick="addToCart('acid - Lifetime', 160)">Add Lifetime to Cart</button>
+
+<!-- angeldust -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\angeldust - Copy.png" alt="angeldust">
+        <h3>angeldust 2</h3>
+        <p>Description of angeldust</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $38.00/month</p>
+        <button onclick="addToCart('angeldust - Monthly', 38)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $300.00</p>
+        <button onclick="addToCart('angeldust - Lifetime', 300)">Add Lifetime to Cart</button>
+    </div>
+
+<!-- bong -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\bong.png" alt="bong">
+        <h3>acid 2</h3>
+        <p>Description of bong</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $18.00/month</p>
+        <button onclick="addToCart('bong - Monthly', 18)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $160.00</p>
+        <button onclick="addToCart('bong - Lifetime', 160)">Add Lifetime to Cart</button>
+
+<!-- crack -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\crack.png" - Copy.png" alt="crack">
+        <h3>crack 2</h3>
+        <p>Description of crack</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $48.00/month</p>
+        <button onclick="addToCart('crack - Monthly', 48)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $350.00</p>
+        <button onclick="addToCart('crack - Lifetime', 350)">Add Lifetime to Cart</button>
+    </div>
+
+<!-- xpill -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\xpill.png" alt="xpill">
+        <h3>xpill 2</h3>
+        <p>Description of xpill</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $18.00/month</p>
+        <button onclick="addToCart('xpill - Monthly', 18)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $160.00</p>
+        <button onclick="addToCart('xpill - Lifetime', 160)">Add Lifetime to Cart</button>
+
+
+
+<!-- meth -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\meth_pooch.png" alt="meth">
+        <h3>acid 2</h3>
+        <p>Description of meth</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $18.00/month</p>
+        <button onclick="addToCart('meth - Monthly', 18)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $160.00</p>
+        <button onclick="addToCart('meth - Lifetime', 160)">Add Lifetime to Cart</button>
+
+<!-- shroom -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\shroom.png" alt="shroom">
+        <h3>shroom 2</h3>
+        <p>Description of shroom</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $20.00/month</p>
+        <button onclick="addToCart('shroom - Monthly', 20)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $220.00</p>
+        <button onclick="addToCart('shroom - Lifetime', 220)">Add Lifetime to Cart</button>
+
+<!-- opium -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\opium_pooch.png" - Copy.png" alt="opium">
+        <h3>opium 2</h3>
+        <p>Description of opium</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $15.00/month</p>
+        <button onclick="addToCart('opium - Monthly', 15)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $350.00</p>
+        <button onclick="addToCart('opium - Lifetime', 350)">Add Lifetime to Cart</button>
+    </div>
+
+<!-- steriods -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\steroids.png" alt="steriods">
+        <h3>steriods 2</h3>
+        <p>Description of steriods</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $20.00/month</p>
+        <button onclick="addToCart('steriods - Monthly', 20)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $210.00</p>
+        <button onclick="addToCart('steriods - Lifetime', 210)">Add Lifetime to Cart</button>
+
+<!-- speedball -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\speedball.png" - Copy.png" alt="speedball">
+        <h3>speedball 2</h3>
+        <p>Description of speedball</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $10.00/month</p>
+        <button onclick="addToCart('speedball - Monthly', 10)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $150.00</p>
+        <button onclick="addToCart('speedball - Lifetime', 150)">Add Lifetime to Cart</button>
+    </div>
+
+<!-- xanax -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\xanax.png" alt="xanax">
+        <h3>xanax 2</h3>
+        <p>Description of xanax</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $32.00/month</p>
+        <button onclick="addToCart('xanax - Monthly', 32)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $200.00</p>
+        <button onclick="addToCart('xanax - Lifetime', 200)">Add Lifetime to Cart</button>
+
+<!-- flakka -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\flakka.png" - Copy.png" alt="flakka">
+        <h3>flakka 2</h3>
+        <p>Description of flakka</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $20.00/month</p>
+        <button onclick="addToCart('flakka - Monthly', 20)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $150.00</p>
+        <button onclick="addToCart('flakka - Lifetime', 150)">Add Lifetime to Cart</button>
+    </div>
+
+ <!-- ketamine -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\ketamine.png" alt="ketamine">
+        <h3>ketamine 2</h3>
+        <p>Description of ketamine</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: 40.00/month</p>
+        <button onclick="addToCart('ketamine - Monthly', 40)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $250.00</p>
+        <button onclick="addToCart('ketamine - Lifetime', 200)">Add Lifetime to Cart</button>
+
+<!-- jolly_candy -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\jolly_candy.png" - Copy.png" alt="jolly_candy">
+        <h3>jolly_candy 2</h3>
+        <p>Description of jolly_candy</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: $10.00/month</p>
+        <button onclick="addToCart('jolly_candy - Monthly', 10)">Add Monthly to Cart</button>
+
+ <!--  lean-->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\lean.png" alt="lean">
+        <h3>lean 2</h3>
+        <p>Description of lean</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: 40.00/month</p>
+        <button onclick="addToCart('lean - Monthly', 40)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $250.00</p>
+        <button onclick="addToCart('lean', 200)">Add Lifetime to Cart</button>
+        
+        <p class="price">Lifetime: $100.00</p>
+        <button onclick="addToCart('lean - Lifetime', 100)">Add Lifetime to Cart</button>
+    </div>
+
+<!-- lsd -->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\lsd.png" alt="lsd">
+        <h3>lsd 2</h3>
+        <p>Description of lsd</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: 40.00/month</p>
+        <button onclick="addToCart('lsd - Monthly', 40)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $250.00</p>
+        <button onclick="addToCart('lsd - Lifetime', 200)">Add Lifetime to Cart</button>
+
+<!--  bathsalts-->
+    <div class="product-card">
+        <img src="C:\Users\blkwi\Downloads\bathsalts.png" alt="bathsalts">
+        <h3>bathsalts 2</h3>
+        <p>Description of bathsalts</p>
+        
+        <!-- Pricing Options -->
+        <p class="price">Monthly: 40.00/month</p>
+        <button onclick="addToCart('bathsalts - Monthly', 40)">Add Monthly to Cart</button>
+
+        
+        <p class="price">Lifetime: $250.00</p>
+        <button onclick="addToCart('bathsalts', 250)">Add Lifetime to Cart</button>
+        </div>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        document.getElementById('cart-count').textContent = cart.length;
+
+        // Add product to cart
+        function addToCart(productName, price) {
+            const product = { name: productName, price: price };
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart)); // Save the cart to localStorage
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+    </script>
+</body>
+</html>
